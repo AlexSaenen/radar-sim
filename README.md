@@ -3,6 +3,24 @@
 **radar-sim** is a Rust project focused on simulating how radar systems work.  
 It aims to model radar signal generation, propagation, reflection, and detection — and then visualize these phenomena in real time using the [Bevy](https://bevyengine.org/) game engine.  
 
+```scss
+  ┌──────────────┐
+  │              │
+  │   RADAR TX   │
+  │              │
+  └──────┬───────┘
+         │  (Transmit Pulse)
+         ▼
+   ~~~~~~~~►►►►►►►►►►   (Electromagnetic Wave)
+         ▲
+         │  (Echo / Return)
+  ┌──────┴───────┐
+  │              │
+  │   RADAR RX   │
+  │              │
+  └──────────────┘
+```
+
 ## Goals
 
 - **Educational:** Understand radar fundamentals (pulse-Doppler, range resolution, clutter, noise).
